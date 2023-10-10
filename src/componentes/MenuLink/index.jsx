@@ -1,19 +1,18 @@
-import { Link, useLocation } from 'react-router-dom'
-import styles from './styles.module.css'
-import { Children } from 'react'
+import { NavLink } from 'react-router-dom';
+import styles from './styles.module.css';
 
-function MenuLink({children, to}) {
-    const localizacao = useLocation()
+export default function MenuLink({ children, to }) {
+
     return (
-        <Link to={to}
-            className={`    
-                    ${styles.link} 
-                    ${localizacao.pathname === to ? styles.linkDestacado : ''}
-                `
-            }> 
+        <NavLink
+            className={({ isActive }) => `
+                ${styles.link}
+                ${isActive ? styles.linkDestacado : ""}
+            `}
+            to={to}
+            end
+        >
             {children}
-        </Link>
+        </NavLink>
     )
 }
-
-export default MenuLink
