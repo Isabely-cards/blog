@@ -1,7 +1,6 @@
 import styles from './styles.module.css'
 import MenuLink from '../MenuLink'
 
-
 function Menu() {
     return (
         <header>
