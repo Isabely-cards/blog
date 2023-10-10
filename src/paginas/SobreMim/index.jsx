@@ -1,8 +1,13 @@
+import Banner from '../../componentes/Banner'
 import styles from './styles.module.css'
 
 function SobreMim() {
     return(
-        <h1>Sobre mim</h1>
+        <section>
+            <Banner/>
+            <h1>oi</h1>
+
+        </section>
     )
 }
  export default SobreMim
