@@ -11,7 +11,7 @@ function Banner() {
                     Olá, Mundo!
                 </h1>
                 <p className={styles.paragrafo}>
-                    Boas vindas ao meu espaço pessoal! Eu sou a Isabely, mas pode me chamar de Bel, futura desenvolvedora :)
+                    Seja muito bem-vindo ao meu cantinho! Sou a Isabely, mas pode me chamar de Bel. Estou em busca do meu lugar como desenvolvedora de software e adoraria compartilhar essa jornada com você!
                 </p>
             </div>
             <div className={styles.imagens}>
