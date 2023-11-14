@@ -21,7 +21,7 @@ function Post() {
         <Routes>
             <Route path="*" element={<PaginaPadrao />}>
                 <Route index element={
-                    <PostModelo titulo={post.titulo} fotoCapa={`../../../public/assets/posts/${post.id}/capa.png`}>
+                    <PostModelo titulo={post.titulo} fotoCapa={`/assets/posts/${post.id}/capa.png`}>
                         <div className="post-markdown-container">
                             <ReactMarkdown>
                                 {post.texto}
