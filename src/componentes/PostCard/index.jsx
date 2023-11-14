@@ -6,7 +6,7 @@ function PostCard({ post }) {
 
    return (
 
-      <Link to={`/posts/${post.id}`}>
+      <Link to={`../../../public/assets/posts/${post.id}`}>
          <div className={styles.post}>
             <img
                className={styles.capa}
